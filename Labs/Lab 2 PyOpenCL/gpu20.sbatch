@@ -1,7 +1,7 @@
 #!/bin/bash
-#SBATCH --job-name=gpu   # job name
-#SBATCH --output=gpu.out # output log file
-#SBATCH --error=gpu.err  # error file
+#SBATCH --job-name=gpu20   # job name
+#SBATCH --output=gpu20.out # output log file
+#SBATCH --error=gpu20.err  # error file
 #SBATCH --time=00:05:00  # 5 minutes of wall time
 #SBATCH --nodes=1        # 1 GPU node
 #SBATCH --partition=gpu2 # GPU2 partition
@@ -11,5 +11,4 @@
 module load cuda
 module load python/anaconda-2019.03
 
-python3 ./print_gpu_info.py
-# python3 ./gpu_rand_walk.py
+python3 ./gpu20.py
